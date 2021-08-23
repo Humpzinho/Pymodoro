@@ -79,7 +79,7 @@ def notification_work():
     my_notification.show_toast(
         "Pymodoro",
         "Your break time is over, it's time to work!",
-        icon_path=".\\tomato_icon.ico",
+        icon_path="resources\\tomato_icon.ico",
         threaded=True,
         duration=8)
     focus_window()
@@ -89,7 +89,7 @@ def notification_sbreak():
     my_notification.show_toast(
         "Pymodoro",
         "Your working time is over, take a break now.",
-        icon_path=".\\tomato_icon.ico",
+        icon_path="resources\\tomato_icon.ico",
         threaded=True,
         duration=8)
     focus_window()
@@ -99,7 +99,7 @@ def notification_lbreak():
     my_notification.show_toast(
         "Pymodoro",
         "You've worked for a long time, now it's time to rest.",
-        icon_path=".\\tomato_icon.ico",
+        icon_path="resources\\tomato_icon.ico",
         threaded=True,
         duration=8)
     focus_window()
@@ -204,7 +204,7 @@ window.resizable(False, False)
 
 #TOMATO AND TIME CANVAS
 canvas = Canvas(width=201, height=250, highlightthickness=0, bg=WORK_BG_C)
-tomato_img = PhotoImage(file=".\\tomato.png")
+tomato_img = PhotoImage(file="resources\\tomato.png")
 window.iconphoto(False, tomato_img)
 canvas.create_image(100, 135, image=tomato_img)
 timer_text = canvas.create_text(100,
