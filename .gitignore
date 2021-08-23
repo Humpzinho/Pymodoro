@@ -2,6 +2,9 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.gitattributes
+.git
+.gitignore
 
 # C extensions
 *.so
